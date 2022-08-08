@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asymmetric Games | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Personal/Logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Personal/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Personal/Logo/favicon-16x16.png">
+    <link rel="manifest" href="/Personal/Logo/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="Style/Style.css">
 </head>
 <body>
     <header>
-        <h1>Asymmetric Games</h1>
+        <div class="banner"></div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Store</a>
-        <a href="#">News</a>
-        <a href="#">About</a>
-        <a href="#">Login</a>
-        <a href="#">Create an account</a>
+        <a class="menu-btn" href="#">Home</a>
+        <a class="menu-btn" href="#">Store</a>
+        <a class="menu-btn" href="#">News</a>
+        <a class="menu-btn" href="#">About</a>
+        <a href="#" class="menu-btn flex-align-right">Login/Create an account</a>
     </nav>
     <main>
         <section>
             <h2>
-                Videos
+                <span>
+                    Videos
+                </span>
             </h2>
-            <video src="video/Avatar- Frontiers of Pandora – First Look Trailer.mp4" width="33%" poster="Image/1076811.jpg" controls></video>
-            <video src="Video/Smite - Season 9 Launch Trailer - PS4.mp4" width="33%" poster="Image/lord-shiva-the-destroyer-smite-2022-games-3840x2160-7297.jpg" controls></video>
-            <video src="Video/Once Human - Official Trailer - Summer of Gaming 2022.mp4" width="33%" poster="Image/once-human-header_jpg_820.jpg" controls></video>
+        <div class="carousel"data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><video src="video/Avatar- Frontiers of Pandora – First Look Trailer.mp4" poster="Image/1076811.jpg" controls></video> </div>
+            <div class="carousel-cell"><video src="Video/Smite - Season 9 Launch Trailer - PS4.mp4" poster="Image/lord-shiva-the-destroyer-smite-2022-games-3840x2160-7297.jpg" controls></video></div>
+            <div class="carousel-cell"><video src="Video/Once Human - Official Trailer - Summer of Gaming 2022.mp4" poster="Image/once-human-header_jpg_820.jpg" controls></video></div>
+        </div>
         </section>
         <section>
-            <h2>Game Reviews</h2>
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/0uav6zQKiMQ" title="Elden Ring Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/Od5A36FudD4" title="Sekiro: Shadows Die Twice Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/n0r67irlT-4" title="Stray Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2><span>Game Reviews</span></h2>
+            <div class="carousel-cell iframe-container"></div>
+            <div class="carousel"data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><iframe src="https://www.youtube.com/embed/0uav6zQKiMQ" title="Elden Ring Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="carousel-cell"><iframe src="https://www.youtube.com/embed/Od5A36FudD4" title="Sekiro: Shadows Die Twice Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="carousel-cell"><iframe ssrc="https://www.youtube.com/embed/n0r67irlT-4" title="Stray Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
         </section>
         <section>
-            <h2>Coming Soon</h2>
-                <a target="blank"><iframe width="400" height="200" src="https://www.youtube.com/embed/I6p_oO5Zwdk" title="Starfield - Story Trailer | Xbox & Bethesda Showcase 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
-                <a target="blank"><iframe width="400" height="200" src="https://www.youtube.com/embed/t4Cec1OjmJU" title="Scorn - Release Date Trailer | Xbox & Bethesda Showcase 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
-                <a target="blank"><iframe width="400" height="200" src="https://www.youtube.com/embed/6pmjmPJ-YH0" title="Skull and Bones - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+            <h2><span>Coming Soon</span></h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><a target="blank"><iframe src="https://www.youtube.com/embed/I6p_oO5Zwdk" title="Starfield - Story Trailer | Xbox & Bethesda Showcase 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a></div>
+                <div class="carousel-cell"><a target="blank"><iframe src="https://www.youtube.com/embed/t4Cec1OjmJU" title="Scorn - Release Date Trailer | Xbox & Bethesda Showcase 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a></div>
+                <div class="carousel-cell"><a target="blank"><iframe src="https://www.youtube.com/embed/6pmjmPJ-YH0" title="Skull and Bones - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a></div>
+            </div>
         </section>
         <section>
-            <h2>FOUNDER</h2>
+            <h2><span>FOUNDER</span></h2>
             <img width="200" height="350" src="Personal/2022-06-30 20.05.59.jpg" alt="Ankur Singh">
             <h3>Ankur Singh</h3>
                 <a href="http://www.instagram.com/me.asymmetric/" target="_blank" rel="noopener noreferrer">Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -57,8 +70,8 @@
         <a href="#">Contact Us</a>
         <a href="#">Privacy Policy</a>
         <a href="#">FAQs</a>
-        <a href="#">&copy; Asymmetric Games </a>
-
+        <a class="copyright" href="#">&copy; Asymmetric Games </a>
     </footer>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
